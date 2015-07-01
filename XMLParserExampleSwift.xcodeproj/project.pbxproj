@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAB6FBA01B44635D00AC472D /* ProductsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6FB9F1B44635D00AC472D /* ProductsParser.swift */; };
+		AAB6FBA21B446F3800AC472D /* productsList.xml in Resources */ = {isa = PBXBuildFile; fileRef = AAB6FBA11B446F3800AC472D /* productsList.xml */; };
 		AAE557BB1B430AE3006822B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE557BA1B430AE3006822B6 /* AppDelegate.swift */; };
 		AAE557BD1B430AE3006822B6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE557BC1B430AE3006822B6 /* MasterViewController.swift */; };
 		AAE557BF1B430AE3006822B6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE557BE1B430AE3006822B6 /* DetailViewController.swift */; };
@@ -15,6 +17,7 @@
 		AAE557C71B430AE3006822B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE557C51B430AE3006822B6 /* LaunchScreen.xib */; };
 		AAE557D31B430AE3006822B6 /* XMLParserExampleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE557D21B430AE3006822B6 /* XMLParserExampleSwiftTests.swift */; };
 		AAE557DD1B430BAD006822B6 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE557DC1B430BAD006822B6 /* Entitlements.plist */; };
+		AAE557E11B430E83006822B6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE557E01B430E83006822B6 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAB6FB9F1B44635D00AC472D /* ProductsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsParser.swift; sourceTree = "<group>"; };
+		AAB6FBA11B446F3800AC472D /* productsList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = productsList.xml; sourceTree = "<group>"; };
 		AAE557B51B430AE3006822B6 /* XMLParserExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLParserExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE557B91B430AE3006822B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE557BA1B430AE3006822B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		AAE557D11B430AE3006822B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE557D21B430AE3006822B6 /* XMLParserExampleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParserExampleSwiftTests.swift; sourceTree = "<group>"; };
 		AAE557DC1B430BAD006822B6 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		AAE557E01B430E83006822B6 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,8 @@
 				AAE557BA1B430AE3006822B6 /* AppDelegate.swift */,
 				AAE557BC1B430AE3006822B6 /* MasterViewController.swift */,
 				AAE557BE1B430AE3006822B6 /* DetailViewController.swift */,
+				AAE557E01B430E83006822B6 /* Product.swift */,
+				AAB6FB9F1B44635D00AC472D /* ProductsParser.swift */,
 				AAE557C01B430AE3006822B6 /* Main.storyboard */,
 				AAE557C31B430AE3006822B6 /* Images.xcassets */,
 				AAE557C51B430AE3006822B6 /* LaunchScreen.xib */,
@@ -95,6 +103,7 @@
 		AAE557B81B430AE3006822B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AAB6FBA11B446F3800AC472D /* productsList.xml */,
 				AAE557DC1B430BAD006822B6 /* Entitlements.plist */,
 				AAE557B91B430AE3006822B6 /* Info.plist */,
 			);
@@ -198,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB6FBA21B446F3800AC472D /* productsList.xml in Resources */,
 				AAE557DD1B430BAD006822B6 /* Entitlements.plist in Resources */,
 				AAE557C21B430AE3006822B6 /* Main.storyboard in Resources */,
 				AAE557C71B430AE3006822B6 /* LaunchScreen.xib in Resources */,
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB6FBA01B44635D00AC472D /* ProductsParser.swift in Sources */,
 				AAE557BF1B430AE3006822B6 /* DetailViewController.swift in Sources */,
+				AAE557E11B430E83006822B6 /* Product.swift in Sources */,
 				AAE557BD1B430AE3006822B6 /* MasterViewController.swift in Sources */,
 				AAE557BB1B430AE3006822B6 /* AppDelegate.swift in Sources */,
 			);
@@ -301,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -341,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -421,6 +433,7 @@
 				AAE557D81B430AE3006822B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAE557D91B430AE3006822B6 /* Build configuration list for PBXNativeTarget "XMLParserExampleSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +442,7 @@
 				AAE557DB1B430AE3006822B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
