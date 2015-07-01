@@ -9,6 +9,5 @@
 import Foundation
 
 class ProductParser:NSObject, NSXMLParserDelegate {
-    let filePathString:String = "productsList.xml"
-    
+    let path = NSBundle.mainBundle().pathForResource("productsList", ofType: ".xml")
 }
