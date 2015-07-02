@@ -57,10 +57,10 @@ class MasterViewController: UITableViewController, NSXMLParserDelegate {
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         if (elementName as NSString) .isEqualToString("Product") {
             if productName != "" {
-                elements.setObject(productName, forKey: "Product Name")
+                elements.setObject(productName, forKey: "name")
             }
             if productDescrition != "" {
-                elements.setObject(productDescrition, forKey: "Product Description")
+                elements.setObject(productDescrition, forKey: "description")
             }
             productArray.addObject(elements)
         }
@@ -111,15 +111,14 @@ class MasterViewController: UITableViewController, NSXMLParserDelegate {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        println("Products", "\(productArray.count)")
         return productArray.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        cell.textLabel!.text = productArray.objectAtIndex(indexPath.row).objectForKey("name") as? String
+// *** Having troubles with this one ***        cell.detailTextLabel!.text = productArray.objectAtIndex(indexPath.row).objectForKey("description") as? String
         return cell
     }
 
