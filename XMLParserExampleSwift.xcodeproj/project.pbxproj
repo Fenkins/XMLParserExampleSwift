@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AAB6FBA01B44635D00AC472D /* ProductsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB6FB9F1B44635D00AC472D /* ProductsParser.swift */; };
 		AAB6FBA21B446F3800AC472D /* productsList.xml in Resources */ = {isa = PBXBuildFile; fileRef = AAB6FBA11B446F3800AC472D /* productsList.xml */; };
 		AAE557BB1B430AE3006822B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE557BA1B430AE3006822B6 /* AppDelegate.swift */; };
 		AAE557BD1B430AE3006822B6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE557BC1B430AE3006822B6 /* MasterViewController.swift */; };
@@ -30,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AAB6FB9F1B44635D00AC472D /* ProductsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsParser.swift; sourceTree = "<group>"; };
 		AAB6FBA11B446F3800AC472D /* productsList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = productsList.xml; sourceTree = "<group>"; };
 		AAE557B51B430AE3006822B6 /* XMLParserExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMLParserExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE557B91B430AE3006822B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 				AAE557BA1B430AE3006822B6 /* AppDelegate.swift */,
 				AAE557BC1B430AE3006822B6 /* MasterViewController.swift */,
 				AAE557BE1B430AE3006822B6 /* DetailViewController.swift */,
-				AAB6FB9F1B44635D00AC472D /* ProductsParser.swift */,
 				AAE557C01B430AE3006822B6 /* Main.storyboard */,
 				AAE557C31B430AE3006822B6 /* Images.xcassets */,
 				AAE557C51B430AE3006822B6 /* LaunchScreen.xib */,
@@ -226,7 +223,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB6FBA01B44635D00AC472D /* ProductsParser.swift in Sources */,
 				AAE557BF1B430AE3006822B6 /* DetailViewController.swift in Sources */,
 				AAE557BD1B430AE3006822B6 /* MasterViewController.swift in Sources */,
 				AAE557BB1B430AE3006822B6 /* AppDelegate.swift in Sources */,
