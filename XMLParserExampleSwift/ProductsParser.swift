@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 class ProductParser:NSObject, NSXMLParserDelegate {
     
@@ -30,8 +29,38 @@ class ProductParser:NSObject, NSXMLParserDelegate {
         
     }
     
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
+        element = elementName
+        
+        // Instantiating
+        if (element as NSString).isEqualToString("Product") {
+            elements = NSMutableDictionary.alloc()
+            elements = [:]
+            productName = NSMutableString.alloc()
+            productName = ""
+            productDescrition = NSMutableString.alloc()
+            productDescrition = ""
+        }
+        
+    }
     
+    func parser(parser: NSXMLParser, foundCharacters string: String?) {
+        if element.isEqualToString("Name") {
+            productName.appendString(string!)
+        } else if element.isEqualToString("Description") {
+            productDescrition.appendString(string!)
+        }
+    }
     
-    
-    
+    func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        if (elementName as NSString) .isEqualToString("Product") {
+            if productName != "" {
+                elements.setObject(productName, forKey: "Product Name")
+            }
+            if productDescrition != "" {
+                elements.setObject(productDescrition, forKey: "Product Description")
+            }
+        productArray.addObject(elements)
+        }
+    }    
 }

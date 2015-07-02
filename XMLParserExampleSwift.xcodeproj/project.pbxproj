@@ -17,7 +17,6 @@
 		AAE557C71B430AE3006822B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE557C51B430AE3006822B6 /* LaunchScreen.xib */; };
 		AAE557D31B430AE3006822B6 /* XMLParserExampleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE557D21B430AE3006822B6 /* XMLParserExampleSwiftTests.swift */; };
 		AAE557DD1B430BAD006822B6 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE557DC1B430BAD006822B6 /* Entitlements.plist */; };
-		AAE557E11B430E83006822B6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE557E01B430E83006822B6 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 		AAE557D11B430AE3006822B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAE557D21B430AE3006822B6 /* XMLParserExampleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParserExampleSwiftTests.swift; sourceTree = "<group>"; };
 		AAE557DC1B430BAD006822B6 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		AAE557E01B430E83006822B6 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +88,6 @@
 				AAE557BA1B430AE3006822B6 /* AppDelegate.swift */,
 				AAE557BC1B430AE3006822B6 /* MasterViewController.swift */,
 				AAE557BE1B430AE3006822B6 /* DetailViewController.swift */,
-				AAE557E01B430E83006822B6 /* Product.swift */,
 				AAB6FB9F1B44635D00AC472D /* ProductsParser.swift */,
 				AAE557C01B430AE3006822B6 /* Main.storyboard */,
 				AAE557C31B430AE3006822B6 /* Images.xcassets */,
@@ -231,7 +228,6 @@
 			files = (
 				AAB6FBA01B44635D00AC472D /* ProductsParser.swift in Sources */,
 				AAE557BF1B430AE3006822B6 /* DetailViewController.swift in Sources */,
-				AAE557E11B430E83006822B6 /* Product.swift in Sources */,
 				AAE557BD1B430AE3006822B6 /* MasterViewController.swift in Sources */,
 				AAE557BB1B430AE3006822B6 /* AppDelegate.swift in Sources */,
 			);
